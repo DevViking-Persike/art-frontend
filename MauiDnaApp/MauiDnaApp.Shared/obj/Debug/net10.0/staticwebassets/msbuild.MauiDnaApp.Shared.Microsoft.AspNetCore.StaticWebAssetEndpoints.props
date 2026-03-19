@@ -1,0 +1,148 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/app.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WdXcdV0LP4uD17SAEDpCX17reQsSSwrcPMPcylUpjaE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2902"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WdXcdV0LP4uD17SAEDpCX17reQsSSwrcPMPcylUpjaE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:37:47 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/app.zxiz86ws8d.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zxiz86ws8d"},{"Name":"integrity","Value":"sha256-WdXcdV0LP4uD17SAEDpCX17reQsSSwrcPMPcylUpjaE="},{"Name":"label","Value":"_content/MauiDnaApp.Shared/app.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2902"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WdXcdV0LP4uD17SAEDpCX17reQsSSwrcPMPcylUpjaE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:37:47 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/circuit.j4ayrj49jp.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\circuit.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"j4ayrj49jp"},{"Name":"integrity","Value":"sha256-ww4a7r5JzR9AjgwcOekF/Jqe3QcpAhnPTVby7Qas\u002BrM="},{"Name":"label","Value":"_content/MauiDnaApp.Shared/circuit.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8560"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ww4a7r5JzR9AjgwcOekF/Jqe3QcpAhnPTVby7Qas\u002BrM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 02:16:49 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/circuit.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\circuit.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ww4a7r5JzR9AjgwcOekF/Jqe3QcpAhnPTVby7Qas\u002BrM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8560"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ww4a7r5JzR9AjgwcOekF/Jqe3QcpAhnPTVby7Qas\u002BrM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 02:16:49 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/dna.f826uhex21.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dna.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f826uhex21"},{"Name":"integrity","Value":"sha256-Mc22i3hu5o30E2V209XDuIiTiCFBklUgvf1evzxAlpo="},{"Name":"label","Value":"_content/MauiDnaApp.Shared/dna.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3545"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Mc22i3hu5o30E2V209XDuIiTiCFBklUgvf1evzxAlpo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:48:30 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/dna.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dna.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Mc22i3hu5o30E2V209XDuIiTiCFBklUgvf1evzxAlpo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3545"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Mc22i3hu5o30E2V209XDuIiTiCFBklUgvf1evzxAlpo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:48:30 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/favicon.ifv42okdf2.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ifv42okdf2"},{"Name":"integrity","Value":"sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="},{"Name":"label","Value":"_content/MauiDnaApp.Shared/favicon.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1148"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00224mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:37:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/favicon.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1148"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00224mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:37:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/lib/bootstrap/dist/css/bootstrap.min.08mtdlppm0.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"08mtdlppm0"},{"Name":"integrity","Value":"sha256-QHmL423\u002Bqgn8fqkPD2Hb/blzaK8A4ALJRal/4lVYPMs="},{"Name":"label","Value":"_content/MauiDnaApp.Shared/lib/bootstrap/dist/css/bootstrap.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"232810"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QHmL423\u002Bqgn8fqkPD2Hb/blzaK8A4ALJRal/4lVYPMs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:37:47 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/lib/bootstrap/dist/css/bootstrap.min.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-QHmL423\u002Bqgn8fqkPD2Hb/blzaK8A4ALJRal/4lVYPMs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"232810"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QHmL423\u002Bqgn8fqkPD2Hb/blzaK8A4ALJRal/4lVYPMs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:37:47 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/lib/bootstrap/dist/css/bootstrap.min.css.ca434j9tb9.map">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css.map'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ca434j9tb9"},{"Name":"integrity","Value":"sha256-dLjmWc4YRAp7XkxEmYm7/xV1ebW\u002BYQ0LrlrrKVB8kXY="},{"Name":"label","Value":"_content/MauiDnaApp.Shared/lib/bootstrap/dist/css/bootstrap.min.css.map"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"589893"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022dLjmWc4YRAp7XkxEmYm7/xV1ebW\u002BYQ0LrlrrKVB8kXY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:37:47 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css.map'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-dLjmWc4YRAp7XkxEmYm7/xV1ebW\u002BYQ0LrlrrKVB8kXY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"589893"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022dLjmWc4YRAp7XkxEmYm7/xV1ebW\u002BYQ0LrlrrKVB8kXY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:37:47 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/MauiDnaApp.Shared.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MauiDnaApp.Shared.dmctoqi2wh.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-27ofpvyUR0fR51WqugOMC5I7wzwuioJoNLTCrpWOk2c="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5754"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002227ofpvyUR0fR51WqugOMC5I7wzwuioJoNLTCrpWOk2c=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:45:59 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/MauiDnaApp.Shared.dmctoqi2wh.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MauiDnaApp.Shared.dmctoqi2wh.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dmctoqi2wh"},{"Name":"integrity","Value":"sha256-27ofpvyUR0fR51WqugOMC5I7wzwuioJoNLTCrpWOk2c="},{"Name":"label","Value":"_content/MauiDnaApp.Shared/MauiDnaApp.Shared.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5754"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002227ofpvyUR0fR51WqugOMC5I7wzwuioJoNLTCrpWOk2c=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:45:59 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/networking.3mr8i837id.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\networking.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3mr8i837id"},{"Name":"integrity","Value":"sha256-y5/vGgytA5RLD7RaYO257EvTDWJXngn3HtiElAaThHQ="},{"Name":"label","Value":"_content/MauiDnaApp.Shared/networking.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2572"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022y5/vGgytA5RLD7RaYO257EvTDWJXngn3HtiElAaThHQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:53:52 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/networking.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\networking.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-y5/vGgytA5RLD7RaYO257EvTDWJXngn3HtiElAaThHQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2572"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022y5/vGgytA5RLD7RaYO257EvTDWJXngn3HtiElAaThHQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:53:52 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/neurons.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\neurons.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FFFol7AKzR4L8fwWAGOKPfnxcenPWfwdkEo\u002Bcbv8PqQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6824"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022FFFol7AKzR4L8fwWAGOKPfnxcenPWfwdkEo\u002Bcbv8PqQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 02:06:41 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/neurons.w5ko5oxttb.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\neurons.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"w5ko5oxttb"},{"Name":"integrity","Value":"sha256-FFFol7AKzR4L8fwWAGOKPfnxcenPWfwdkEo\u002Bcbv8PqQ="},{"Name":"label","Value":"_content/MauiDnaApp.Shared/neurons.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6824"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022FFFol7AKzR4L8fwWAGOKPfnxcenPWfwdkEo\u002Bcbv8PqQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 02:06:41 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/pocketwatch.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\pocketwatch.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5VRWWc6LA30UFKD8GeHK9osfbA3\u002BmV9AFNdXWboD5Kg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"21381"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00225VRWWc6LA30UFKD8GeHK9osfbA3\u002BmV9AFNdXWboD5Kg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 02:23:06 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/pocketwatch.xdn2a262wm.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\pocketwatch.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xdn2a262wm"},{"Name":"integrity","Value":"sha256-5VRWWc6LA30UFKD8GeHK9osfbA3\u002BmV9AFNdXWboD5Kg="},{"Name":"label","Value":"_content/MauiDnaApp.Shared/pocketwatch.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"21381"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00225VRWWc6LA30UFKD8GeHK9osfbA3\u002BmV9AFNdXWboD5Kg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 02:23:06 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/thinking.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\thinking.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zFoSG6lwuZoPBJ3k5jzRU1cn4A/1F/8KwCvYFwJ\u002Bwgo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3445"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022zFoSG6lwuZoPBJ3k5jzRU1cn4A/1F/8KwCvYFwJ\u002Bwgo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:53:02 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/thinking.w7ndsiokl8.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\thinking.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"w7ndsiokl8"},{"Name":"integrity","Value":"sha256-zFoSG6lwuZoPBJ3k5jzRU1cn4A/1F/8KwCvYFwJ\u002Bwgo="},{"Name":"label","Value":"_content/MauiDnaApp.Shared/thinking.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3445"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022zFoSG6lwuZoPBJ3k5jzRU1cn4A/1F/8KwCvYFwJ\u002Bwgo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:53:02 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/thrust.daxy8cgyk0.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\thrust.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"daxy8cgyk0"},{"Name":"integrity","Value":"sha256-BRVP17iIBkofXqW7ADy7zQrcx8X0djyHT/LLKLepM00="},{"Name":"label","Value":"_content/MauiDnaApp.Shared/thrust.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3947"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022BRVP17iIBkofXqW7ADy7zQrcx8X0djyHT/LLKLepM00=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:52:18 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MauiDnaApp.Shared/thrust.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\thrust.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BRVP17iIBkofXqW7ADy7zQrcx8X0djyHT/LLKLepM00="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3947"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022BRVP17iIBkofXqW7ADy7zQrcx8X0djyHT/LLKLepM00=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Mar 2026 01:52:18 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
