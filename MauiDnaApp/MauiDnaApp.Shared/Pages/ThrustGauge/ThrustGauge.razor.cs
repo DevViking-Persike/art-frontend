@@ -14,7 +14,8 @@ public partial class ThrustGauge : IAsyncDisposable
     {
         if (firstRender)
         {
-            module = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/MauiDnaApp.Shared/js/thrust.js");
+            var version = DateTime.Now.Ticks;
+            module = await JSRuntime.InvokeAsync<IJSObjectReference>("import", $"./_content/MauiDnaApp.Shared/js/thrust.js?v={version}");
             await module.InvokeVoidAsync("startThrustAnimation", "thrustCanvas");
         }
     }
