@@ -9,6 +9,7 @@ const ctx = await esbuild.context({
     { in: './ts/animations/networking/index.ts', out: 'networking' },
     { in: './ts/animations/neurons/index.ts', out: 'neurons' },
     { in: './ts/animations/pocketwatch/index.ts', out: 'pocketwatch' },
+    { in: './ts/animations/solarsystem/index.ts', out: 'solarsystem' },
     { in: './ts/animations/thinking/index.ts', out: 'thinking' },
     { in: './ts/animations/thrust/index.ts', out: 'thrust' }
   ],
