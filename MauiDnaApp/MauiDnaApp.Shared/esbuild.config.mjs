@@ -5,6 +5,7 @@ const isWatch = process.argv.includes('--watch');
 const ctx = await esbuild.context({
   entryPoints: [
     { in: './ts/animations/circuit/index.ts', out: 'circuit' },
+    { in: './ts/animations/desertwhales/index.ts', out: 'desertwhales' },
     { in: './ts/animations/dna/index.ts', out: 'dna' },
     { in: './ts/animations/networking/index.ts', out: 'networking' },
     { in: './ts/animations/neurons/index.ts', out: 'neurons' },
