@@ -13,5 +13,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0" />
   </ItemGroup>
+  <Target Name="CompileTypeScript" BeforeTargets="BeforeBuild">
+    <Exec Command="npm run build:ts" Condition="Exists('package.json')" />
+  </Target>
 
 </Project>

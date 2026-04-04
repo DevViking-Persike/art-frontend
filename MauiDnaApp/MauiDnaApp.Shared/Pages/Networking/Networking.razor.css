@@ -1,0 +1,18 @@
+.networking-container {
+    background-color: #030100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+::deep #networkingCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: radial-gradient(circle at center, #0a0500 0%, #030100 100%);
+}

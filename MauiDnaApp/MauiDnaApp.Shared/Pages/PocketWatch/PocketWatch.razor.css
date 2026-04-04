@@ -1,0 +1,19 @@
+.watch-container {
+    background-color: #030100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+::deep #watchCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #030100;
+    filter: drop-shadow(0 0 40px rgba(0,0,0,0.8));
+}

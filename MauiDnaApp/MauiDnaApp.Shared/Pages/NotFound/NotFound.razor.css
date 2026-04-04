@@ -1,0 +1,43 @@
+.notfound-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: #030508;
+    color: #e6e6e6;
+    text-align: center;
+    gap: 1rem;
+}
+
+.notfound-container h1 {
+    font-size: 8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #00f2ff, #b700ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    line-height: 1;
+}
+
+.notfound-container p {
+    font-size: 1.2rem;
+    color: rgba(230, 230, 230, 0.6);
+}
+
+.notfound-container a {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    border: 1px solid rgba(0, 242, 255, 0.4);
+    border-radius: 8px;
+    color: #00f2ff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.notfound-container a:hover {
+    background: rgba(0, 242, 255, 0.1);
+    border-color: #00f2ff;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+}

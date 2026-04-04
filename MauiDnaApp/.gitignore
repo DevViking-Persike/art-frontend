@@ -1,0 +1,36 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# .NET
+*.user
+*.suo
+*.cache
+*.dll
+*.pdb
+*.nupkg
+project.lock.json
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+*.sln.docstates
+
+# Node
+node_modules/
+package-lock.json
+
+# esbuild compiled JS output (source is in /ts/)
+MauiDnaApp.Shared/wwwroot/js/*.js
+
+# OS files
+.DS_Store
+Thumbs.db
