@@ -1,0 +1,19 @@
+@namespace Testedecriacao.Shared.Components.Molecules
+@using Testedecriacao.Shared.Components.Atoms
+
+<div class="search-bar d-flex gap-2 @CssClass">
+    <SearchInput @bind-Value="SearchTerm" Placeholder="@Placeholder" OnSearch="HandleSearch" CssClass="flex-grow-1" />
+    <Button Variant="primary" OnClick="HandleSearchClick" Icon="🔍">
+        Buscar
+    </Button>
+</div>
+
+@code {
+    [Parameter] public string SearchTerm { get; set; } = "";
+    [Parameter] public string Placeholder { get; set; } = "Buscar produtos...";
+    [Parameter] public string? CssClass { get; set; }
+    [Parameter] public EventCallback<string> OnSearch { get; set; }
+
+    private async Task HandleSearch() => await OnSearch.InvokeAsync(SearchTerm);
+    private async Task HandleSearchClick(MouseEventArgs e) => await OnSearch.InvokeAsync(SearchTerm);
+}

@@ -1,0 +1,28 @@
+@namespace Testedecriacao.Shared.Components.Organisms
+@using Testedecriacao.Shared.Components.Molecules
+@using Testedecriacao.Shared.Models
+
+<nav class="category-nav d-flex flex-wrap gap-2 p-2 @CssClass">
+    <CategoryChip Name="Todos" IsActive="@(SelectedCategory is null)" OnSelect="HandleSelect" />
+    @foreach (var cat in Categories)
+    {
+        <CategoryChip Name="@cat.Name"
+                       Icon="@cat.Icon"
+                       Count="@cat.ProductCount"
+                       IsActive="@(SelectedCategory == cat.Name)"
+                       OnSelect="HandleSelect" />
+    }
+</nav>
+
+@code {
+    [Parameter] public IEnumerable<Category> Categories { get; set; } = [];
+    [Parameter] public string? SelectedCategory { get; set; }
+    [Parameter] public string? CssClass { get; set; }
+    [Parameter] public EventCallback<string?> OnCategorySelected { get; set; }
+
+    private async Task HandleSelect(string name)
+    {
+        var value = name == "Todos" ? null : name;
+        await OnCategorySelected.InvokeAsync(value);
+    }
+}

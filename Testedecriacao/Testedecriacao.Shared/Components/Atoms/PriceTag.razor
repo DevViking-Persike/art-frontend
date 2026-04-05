@@ -1,0 +1,24 @@
+@namespace Testedecriacao.Shared.Components.Atoms
+
+<div class="price-tag @CssClass">
+    @if (OriginalPrice.HasValue && OriginalPrice > Price)
+    {
+        <span class="price-original">@OriginalPrice?.ToString("C")</span>
+    }
+    <span class="price-current @(HasDiscount ? "price-discount" : "")">@Price.ToString("C")</span>
+    @if (HasDiscount)
+    {
+        <span class="badge bg-danger price-badge">-@DiscountPercent%</span>
+    }
+</div>
+
+@code {
+    [Parameter, EditorRequired] public decimal Price { get; set; }
+    [Parameter] public decimal? OriginalPrice { get; set; }
+    [Parameter] public string? CssClass { get; set; }
+
+    private bool HasDiscount => OriginalPrice.HasValue && OriginalPrice > Price;
+    private int DiscountPercent => OriginalPrice.HasValue && OriginalPrice > 0
+        ? (int)Math.Round((1 - Price / OriginalPrice.Value) * 100)
+        : 0;
+}

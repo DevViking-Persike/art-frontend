@@ -1,0 +1,35 @@
+@namespace Testedecriacao.Shared.Components.Molecules
+@using Testedecriacao.Shared.Components.Atoms
+
+<div class="product-card card @CssClass" @onclick="() => OnSelect.InvokeAsync(ProductId)">
+    <ProductImage Src="@ImageUrl" Alt="@Name" BadgeText="@BadgeText" CssClass="card-img-top-wrapper" />
+    <div class="card-body">
+        <p class="product-card-category text-muted small mb-1">@Category</p>
+        <h6 class="product-card-title card-title">@Name</h6>
+        <Rating Value="@RatingValue" Count="@RatingCount" CssClass="mb-2" />
+        <PriceTag Price="@Price" OriginalPrice="@OriginalPrice" />
+        <Button Variant="primary" Size="sm" CssClass="mt-2 w-100" OnClick="HandleAddToCart">
+            Adicionar ao Carrinho
+        </Button>
+    </div>
+</div>
+
+@code {
+    [Parameter, EditorRequired] public int ProductId { get; set; }
+    [Parameter, EditorRequired] public string Name { get; set; } = "";
+    [Parameter, EditorRequired] public string ImageUrl { get; set; } = "";
+    [Parameter, EditorRequired] public decimal Price { get; set; }
+    [Parameter] public decimal? OriginalPrice { get; set; }
+    [Parameter] public string Category { get; set; } = "";
+    [Parameter] public double RatingValue { get; set; }
+    [Parameter] public int RatingCount { get; set; }
+    [Parameter] public string? BadgeText { get; set; }
+    [Parameter] public string? CssClass { get; set; }
+    [Parameter] public EventCallback<int> OnSelect { get; set; }
+    [Parameter] public EventCallback<int> OnAddToCart { get; set; }
+
+    private async Task HandleAddToCart(MouseEventArgs e)
+    {
+        await OnAddToCart.InvokeAsync(ProductId);
+    }
+}

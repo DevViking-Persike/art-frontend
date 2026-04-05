@@ -1,0 +1,33 @@
+@namespace Testedecriacao.Shared.Components.Organisms
+@using Testedecriacao.Shared.Components.Atoms
+@using Testedecriacao.Shared.Components.Molecules
+
+<header class="store-header d-flex align-items-center justify-content-between p-3 border-bottom @CssClass">
+    <div class="store-header-brand">
+        <h4 class="mb-0">@StoreName</h4>
+    </div>
+
+    <SearchBar OnSearch="OnSearch" CssClass="store-header-search flex-grow-1 mx-4" />
+
+    <div class="store-header-actions d-flex align-items-center gap-3">
+        <button class="btn btn-outline-secondary position-relative" @onclick="OnCartClick">
+            🛒
+            @if (CartCount > 0)
+            {
+                <Badge Variant="danger" CssClass="position-absolute top-0 start-100 translate-middle rounded-pill">
+                    @CartCount
+                </Badge>
+            }
+        </button>
+        <button class="btn btn-outline-secondary" @onclick="OnAccountClick">👤</button>
+    </div>
+</header>
+
+@code {
+    [Parameter] public string StoreName { get; set; } = "Loja";
+    [Parameter] public int CartCount { get; set; }
+    [Parameter] public string? CssClass { get; set; }
+    [Parameter] public EventCallback<string> OnSearch { get; set; }
+    [Parameter] public EventCallback OnCartClick { get; set; }
+    [Parameter] public EventCallback OnAccountClick { get; set; }
+}

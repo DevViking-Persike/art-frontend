@@ -1,0 +1,22 @@
+@namespace Testedecriacao.Shared.Components.Atoms
+
+<div class="rating @CssClass" title="@Value de 5">
+    @for (int i = 1; i <= 5; i++)
+    {
+        var star = i;
+        <span class="rating-star @(star <= Value ? "filled" : star - 0.5 <= Value ? "half" : "")"
+              @onclick="() => OnRate.InvokeAsync(star)">&#9733;</span>
+    }
+    @if (ShowCount)
+    {
+        <span class="rating-count">(@Count)</span>
+    }
+</div>
+
+@code {
+    [Parameter] public double Value { get; set; }
+    [Parameter] public int Count { get; set; }
+    [Parameter] public bool ShowCount { get; set; } = true;
+    [Parameter] public string? CssClass { get; set; }
+    [Parameter] public EventCallback<int> OnRate { get; set; }
+}

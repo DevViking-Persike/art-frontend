@@ -1,0 +1,17 @@
+@namespace Testedecriacao.Shared.Components.Atoms
+
+<div class="product-image @CssClass">
+    <img src="@Src" alt="@Alt" loading="lazy" />
+    @if (!string.IsNullOrEmpty(BadgeText))
+    {
+        <span class="product-image-badge badge bg-@BadgeVariant">@BadgeText</span>
+    }
+</div>
+
+@code {
+    [Parameter, EditorRequired] public string Src { get; set; } = "";
+    [Parameter] public string Alt { get; set; } = "Produto";
+    [Parameter] public string? BadgeText { get; set; }
+    [Parameter] public string BadgeVariant { get; set; } = "danger";
+    [Parameter] public string? CssClass { get; set; }
+}

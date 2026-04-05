@@ -1,0 +1,126 @@
+@page "/"
+@using Testedecriacao.Shared.Components.Atoms
+@using Testedecriacao.Shared.Components.Molecules
+@using Testedecriacao.Shared.Components.Organisms
+@using Testedecriacao.Shared.Components.Templates
+@using Testedecriacao.Shared.Models
+
+<PageTitle>Loja Demo</PageTitle>
+
+<ShopTemplate StoreName="TechStore"
+              CartItemCount="@cartItems.Count"
+              ShowCart="@showCart"
+              Categories="@categories"
+              SelectedCategory="@selectedCategory"
+              OnSearch="HandleSearch"
+              OnCartToggle="ToggleCart"
+              OnCategorySelected="HandleCategorySelected">
+    <ChildContent>
+        <ProductGrid Products="@FilteredProducts"
+                     Title="@gridTitle"
+                     Columns="4"
+                     OnProductSelect="HandleProductSelect"
+                     OnAddToCart="HandleAddToCart" />
+    </ChildContent>
+    <CartContent>
+        <ShoppingCart Items="@cartItems"
+                      Discount="@discount"
+                      OnQuantityChanged="HandleQuantityChanged"
+                      OnRemoveItem="HandleRemoveItem"
+                      OnCheckout="HandleCheckout" />
+    </CartContent>
+</ShopTemplate>
+
+@code {
+    private bool showCart;
+    private string? selectedCategory;
+    private string searchTerm = "";
+    private decimal discount = 15.00m;
+
+    private string gridTitle => selectedCategory is not null
+        ? selectedCategory
+        : string.IsNullOrEmpty(searchTerm) ? "Todos os Produtos" : $"Resultados para \"{searchTerm}\"";
+
+    private IEnumerable<Product> FilteredProducts => products
+        .Where(p => selectedCategory is null || p.Category == selectedCategory)
+        .Where(p => string.IsNullOrEmpty(searchTerm) ||
+                    p.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase));
+
+    private List<CartItemModel> cartItems = new()
+    {
+        new() { ProductId = 1, Name = "Notebook Gamer X", ImageUrl = "https://picsum.photos/seed/nb/200/200", Price = 5499.90m, Quantity = 1 }
+    };
+
+    private List<Category> categories = new()
+    {
+        new() { Name = "Notebooks", Icon = "💻", ProductCount = 3 },
+        new() { Name = "Smartphones", Icon = "📱", ProductCount = 3 },
+        new() { Name = "Audio", Icon = "🎧", ProductCount = 2 },
+        new() { Name = "Acessorios", Icon = "⌨️", ProductCount = 2 },
+    };
+
+    private List<Product> products = new()
+    {
+        new() { Id = 1, Name = "Notebook Gamer X Pro", ImageUrl = "https://picsum.photos/seed/nb1/400/300", Price = 5499.90m, OriginalPrice = 6299.90m, Category = "Notebooks", Rating = 4.5, RatingCount = 128, BadgeText = "Oferta" },
+        new() { Id = 2, Name = "Notebook Ultrabook Air", ImageUrl = "https://picsum.photos/seed/nb2/400/300", Price = 3899.00m, Category = "Notebooks", Rating = 4.2, RatingCount = 85 },
+        new() { Id = 3, Name = "Notebook Workstation", ImageUrl = "https://picsum.photos/seed/nb3/400/300", Price = 7199.00m, OriginalPrice = 7999.00m, Category = "Notebooks", Rating = 4.8, RatingCount = 42 },
+        new() { Id = 4, Name = "Smartphone Ultra 15", ImageUrl = "https://picsum.photos/seed/ph1/400/300", Price = 4299.00m, OriginalPrice = 4999.00m, Category = "Smartphones", Rating = 4.7, RatingCount = 312, BadgeText = "Novo" },
+        new() { Id = 5, Name = "Smartphone Lite SE", ImageUrl = "https://picsum.photos/seed/ph2/400/300", Price = 1899.00m, Category = "Smartphones", Rating = 4.0, RatingCount = 198 },
+        new() { Id = 6, Name = "Smartphone Max Pro", ImageUrl = "https://picsum.photos/seed/ph3/400/300", Price = 5699.00m, Category = "Smartphones", Rating = 4.9, RatingCount = 67, BadgeText = "Premium" },
+        new() { Id = 7, Name = "Fone Bluetooth NC", ImageUrl = "https://picsum.photos/seed/hd1/400/300", Price = 599.90m, OriginalPrice = 799.90m, Category = "Audio", Rating = 4.3, RatingCount = 456 },
+        new() { Id = 8, Name = "Caixa de Som Portátil", ImageUrl = "https://picsum.photos/seed/hd2/400/300", Price = 349.90m, Category = "Audio", Rating = 4.1, RatingCount = 230 },
+        new() { Id = 9, Name = "Teclado Mecânico RGB", ImageUrl = "https://picsum.photos/seed/kb1/400/300", Price = 449.90m, OriginalPrice = 549.90m, Category = "Acessorios", Rating = 4.6, RatingCount = 189 },
+        new() { Id = 10, Name = "Mouse Gamer Pro", ImageUrl = "https://picsum.photos/seed/ms1/400/300", Price = 249.90m, Category = "Acessorios", Rating = 4.4, RatingCount = 324, BadgeText = "Mais Vendido" },
+    };
+
+    private void ToggleCart() => showCart = !showCart;
+
+    private void HandleSearch(string term) => searchTerm = term;
+
+    private void HandleCategorySelected(string? category) => selectedCategory = category;
+
+    private void HandleProductSelect(int productId)
+    {
+        // Navegar para detalhe do produto
+    }
+
+    private void HandleAddToCart(int productId)
+    {
+        var existing = cartItems.FirstOrDefault(c => c.ProductId == productId);
+        if (existing is not null)
+        {
+            existing.Quantity++;
+        }
+        else
+        {
+            var product = products.First(p => p.Id == productId);
+            cartItems.Add(new CartItemModel
+            {
+                ProductId = product.Id,
+                Name = product.Name,
+                ImageUrl = product.ImageUrl,
+                Price = product.Price,
+                Quantity = 1
+            });
+        }
+        showCart = true;
+    }
+
+    private void HandleQuantityChanged((int ProductId, int Quantity) change)
+    {
+        var item = cartItems.FirstOrDefault(c => c.ProductId == change.ProductId);
+        if (item is not null)
+            item.Quantity = change.Quantity;
+    }
+
+    private void HandleRemoveItem(int productId)
+    {
+        cartItems.RemoveAll(c => c.ProductId == productId);
+        if (!cartItems.Any()) showCart = false;
+    }
+
+    private void HandleCheckout(MouseEventArgs e)
+    {
+        // Navegar para checkout
+    }
+}

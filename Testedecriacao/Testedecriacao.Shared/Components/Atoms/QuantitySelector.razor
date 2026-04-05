@@ -1,0 +1,33 @@
+@namespace Testedecriacao.Shared.Components.Atoms
+
+<div class="quantity-selector @CssClass">
+    <button class="btn btn-outline-secondary btn-sm" disabled="@(Value <= Min)" @onclick="Decrement">−</button>
+    <span class="quantity-value">@Value</span>
+    <button class="btn btn-outline-secondary btn-sm" disabled="@(Value >= Max)" @onclick="Increment">+</button>
+</div>
+
+@code {
+    [Parameter] public int Value { get; set; } = 1;
+    [Parameter] public int Min { get; set; } = 1;
+    [Parameter] public int Max { get; set; } = 99;
+    [Parameter] public string? CssClass { get; set; }
+    [Parameter] public EventCallback<int> ValueChanged { get; set; }
+
+    private async Task Increment()
+    {
+        if (Value < Max)
+        {
+            Value++;
+            await ValueChanged.InvokeAsync(Value);
+        }
+    }
+
+    private async Task Decrement()
+    {
+        if (Value > Min)
+        {
+            Value--;
+            await ValueChanged.InvokeAsync(Value);
+        }
+    }
+}

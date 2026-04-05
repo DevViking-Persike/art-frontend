@@ -1,0 +1,23 @@
+@namespace Testedecriacao.Shared.Components.Molecules
+
+<button class="category-chip btn @(IsActive ? "btn-primary" : "btn-outline-secondary") btn-sm rounded-pill @CssClass"
+        @onclick="() => OnSelect.InvokeAsync(Name)">
+    @if (!string.IsNullOrEmpty(Icon))
+    {
+        <span class="me-1">@Icon</span>
+    }
+    @Name
+    @if (Count > 0)
+    {
+        <span class="badge bg-light text-dark ms-1">@Count</span>
+    }
+</button>
+
+@code {
+    [Parameter, EditorRequired] public string Name { get; set; } = "";
+    [Parameter] public string? Icon { get; set; }
+    [Parameter] public int Count { get; set; }
+    [Parameter] public bool IsActive { get; set; }
+    [Parameter] public string? CssClass { get; set; }
+    [Parameter] public EventCallback<string> OnSelect { get; set; }
+}
